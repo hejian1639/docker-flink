@@ -13,12 +13,12 @@
 #  distributed under the License is distributed on an "AS IS" BASIS,
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
-# limitations under the License.
+#  limitations under the License.
 ################################################################################
 
 # Set the FLINK_DOCKER_IMAGE_NAME environment variable to override the image name to use
 
-version: "2.4"
+version: "3"
 services:
   jobmanager:
     build:

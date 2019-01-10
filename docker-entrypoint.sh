@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ################################################################################
 #  Licensed to the Apache Software Foundation (ASF) under one
@@ -22,24 +22,18 @@
 JOB_MANAGER_RPC_ADDRESS=${JOB_MANAGER_RPC_ADDRESS:-$(hostname -f)}
 ###
 
-# echo $JOB_MANAGER_RPC_ADDRESS
-# echo $FLINK_HOME
-# ls -al $FLINK_HOME/bin
-
 if [ "$1" == "--help" -o "$1" == "-h" ]; then
     echo "Usage: $(basename $0) (jobmanager|taskmanager)"
     exit 0
 elif [ "$1" == "jobmanager" ]; then
     echo "Starting Job Manager"
-    # sed -i -e "s/jobmanager.rpc.address: localhost/jobmanager.rpc.address: ${JOB_MANAGER_RPC_ADDRESS}/g" $FLINK_HOME/conf/flink-conf.yaml
-
+    sed -i -e "s/jobmanager.rpc.address: localhost/jobmanager.rpc.address: ${JOB_MANAGER_RPC_ADDRESS}/g" $FLINK_HOME/conf/flink-conf.yaml
     echo "config file: " && grep '^[^\n#]' $FLINK_HOME/conf/flink-conf.yaml
-    exec $FLINK_HOME/bin/jobmanager.sh start-foreground cluster
+   exec $FLINK_HOME/bin/jobmanager.sh start-foreground 
 elif [ "$1" == "taskmanager" ]; then
 
-    # sed -i -e "s/jobmanager.rpc.address: localhost/jobmanager.rpc.address: ${JOB_MANAGER_RPC_ADDRESS}/g" $FLINK_HOME/conf/flink-conf.yaml
-    # sed -i -e "s/taskmanager.numberOfTaskSlots: 1/taskmanager.numberOfTaskSlots: $(grep -c ^processor /proc/cpuinfo)/g" $FLINK_HOME/conf/flink-conf.yaml
-
+    sed -i -e "s/jobmanager.rpc.address: localhost/jobmanager.rpc.address: ${JOB_MANAGER_RPC_ADDRESS}/g" $FLINK_HOME/conf/flink-conf.yaml
+    sed -i -e "s/taskmanager.numberOfTaskSlots: 1/taskmanager.numberOfTaskSlots: 8/g" $FLINK_HOME/conf/flink-conf.yaml
     echo "Starting Task Manager"
     echo "config file: " && grep '^[^\n#]' $FLINK_HOME/conf/flink-conf.yaml
     exec $FLINK_HOME/bin/taskmanager.sh start-foreground

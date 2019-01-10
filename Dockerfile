@@ -16,22 +16,34 @@
 # limitations under the License.
 ################################################################################
 
-FROM java
+FROM java:8-jre-alpine
 
+# Install requirements
+RUN apk add --no-cache bash snappy
 
 # Flink environment variables
-ENV FLINK_HOME /flink
+ENV FLINK_INSTALL_PATH=/opt
+ENV FLINK_HOME $FLINK_INSTALL_PATH/flink
 ENV PATH $PATH:$FLINK_HOME/bin
 
-RUN mkdir $FLINK_HOME
+# flink-dist can point to a directory or a tarball on the local system
+ARG flink_dist=./flink-1.6.1
+
+RUN mkdir -p $FLINK_HOME
 
 # Install build dependencies and flink
-COPY ./flink-1.6.1/ $FLINK_HOME/
+COPY $flink_dist/ $FLINK_HOME/
 
-# RUN chmod +x $FLINK_HOME/bin/*
+
+RUN set -x && \
+  addgroup -S flink && adduser -D -S -H -G flink -h $FLINK_HOME flink && \
+  chown -R flink:flink $FLINK_HOME && \
+  chown -h flink:flink $FLINK_HOME
+
 
 COPY docker-entrypoint.sh /
 
+USER flink
 EXPOSE 8081 6123
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["--help"]
