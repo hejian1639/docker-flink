@@ -1,0 +1,72 @@
+2019-01-09 17:15:03.611 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  - --------------------------------------------------------------------------------
+2019-01-09 17:15:03.613 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  Starting TaskManager (Version: 1.6.1, Rev:23e2636, Date:14.09.2018 @ 19:56:46 UTC)
+2019-01-09 17:15:03.613 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  OS current user: jianhe
+2019-01-09 17:15:03,889 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-01-09 17:15:03.955 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  Current Hadoop/Kerberos user: jianhe
+2019-01-09 17:15:03.955 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  JVM: Java HotSpot(TM) 64-Bit Server VM - Oracle Corporation - 1.8/25.181-b13
+2019-01-09 17:15:03.955 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  Maximum heap size: 922 MiBytes
+2019-01-09 17:15:03.955 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  JAVA_HOME: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  Hadoop version: 2.8.3
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  JVM Options:
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     -XX:+UseG1GC
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     -Xms922M
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     -Xmx922M
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     -XX:MaxDirectMemorySize=8388607T
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     -Dlog.file=/Users/jianhe/docker-flink/flink-1.6.1/log/flink-jianhe-taskexecutor-0-JiandeMacBook-Pro.local.log
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     -Dlog4j.configuration=file:/Users/jianhe/docker-flink/flink-1.6.1/conf/log4j.properties
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     -Dlogback.configurationFile=file:/Users/jianhe/docker-flink/flink-1.6.1/conf/logback.xml
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  Program Arguments:
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     --configDir
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -     /Users/jianhe/docker-flink/flink-1.6.1/conf
+2019-01-09 17:15:03.957 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  -  Classpath: /Users/jianhe/docker-flink/flink-1.6.1/lib/flink-python_2.11-1.6.1.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/flink-shaded-hadoop2-uber-1.6.1.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/log4j-1.2.17.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/logback-classic-1.1.9.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/logback-core-1.1.9.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/slf4j-api-1.7.22.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/slf4j-log4j12-1.7.7.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/flink-dist_2.11-1.6.1.jar:::
+2019-01-09 17:15:03.958 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  - --------------------------------------------------------------------------------
+2019-01-09 17:15:03.959 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  - Registered UNIX signal handlers for [TERM, HUP, INT]
+2019-01-09 17:15:03.962 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  - Maximum number of open file descriptors is 10240.
+2019-01-09 17:15:03.971 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: jobmanager.rpc.address, localhost
+2019-01-09 17:15:03.971 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: jobmanager.rpc.port, 6123
+2019-01-09 17:15:03.971 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: jobmanager.heap.size, 1024m
+2019-01-09 17:15:03.971 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: taskmanager.heap.size, 1024m
+2019-01-09 17:15:03.971 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: taskmanager.numberOfTaskSlots, 8
+2019-01-09 17:15:03.972 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: parallelism.default, 1
+2019-01-09 17:15:03.972 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: rest.port, 8081
+2019-01-09 17:15:04.015 [main] INFO  org.apache.flink.runtime.security.modules.HadoopModule  - Hadoop user set to jianhe (auth:SIMPLE)
+2019-01-09 17:15:04.187 [main] WARN  org.apache.flink.configuration.Configuration  - Config uses deprecated configuration key 'jobmanager.rpc.address' instead of proper key 'rest.address'
+2019-01-09 17:15:04.193 [main] INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils  - Trying to select the network interface and address to use by connecting to the leading JobManager.
+2019-01-09 17:15:04.194 [main] INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils  - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+2019-01-09 17:15:04.196 [main] INFO  org.apache.flink.runtime.net.ConnectionUtils  - Retrieved new target address localhost/127.0.0.1:6123.
+2019-01-09 17:15:04.586 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  - TaskManager will use hostname/address 'JiandeMacBook-Pro.local' (172.17.163.39) for communication.
+2019-01-09 17:15:04.587 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils  - Starting AkkaRpcService at jiandemacbook-pro.local:0.
+2019-01-09 17:15:04.866 [flink-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger  - Slf4jLogger started
+2019-01-09 17:15:04.866 [flink-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger  - Slf4jLogger started
+2019-01-09 17:15:04.910 [flink-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting main - Starting remoting
+2019-01-09 17:15:04.910 [flink-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting main - Starting remoting
+2019-01-09 17:15:05.025 [flink-akka.actor.default-dispatcher-2] INFO  akka.remote.Remoting main - Remoting started; listening on addresses :[akka.tcp://flink@jiandemacbook-pro.local:56263]
+2019-01-09 17:15:05.025 [flink-akka.actor.default-dispatcher-2] INFO  akka.remote.Remoting main - Remoting started; listening on addresses :[akka.tcp://flink@jiandemacbook-pro.local:56263]
+2019-01-09 17:15:05.041 [main] INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl  - No metrics reporter configured, no metrics will be exposed/reported.
+2019-01-09 17:15:05.045 [main] INFO  org.apache.flink.runtime.blob.PermanentBlobCache  - Created BLOB cache storage directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/blobStore-17cf7c1e-1b6a-4f38-93a7-edfbc666b7ed
+2019-01-09 17:15:05.049 [main] INFO  org.apache.flink.runtime.blob.TransientBlobCache  - Created BLOB cache storage directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/blobStore-4d154a98-c838-4f34-bf72-3c22cc9003d1
+2019-01-09 17:15:05.049 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  - Starting TaskManager with ResourceID: 500ed7ef8efd090fa0d26eb49716e7ec
+2019-01-09 17:15:05.053 [main] INFO  org.apache.flink.runtime.io.network.netty.NettyConfig  - NettyConfig [server address: JiandeMacBook-Pro.local/172.17.163.39, server port: 0, ssl enabled: false, memory segment size (bytes): 32768, transport type: NIO, number of server threads: 8 (manual), number of client threads: 8 (manual), server connect backlog: 0 (use Netty's default), client connect timeout (sec): 120, send/receive buffer size (bytes): 0 (use Netty's default)]
+2019-01-09 17:15:05.084 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices  - Temporary file directory '/var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T': total 465 GB, usable 305 GB (65.59% usable)
+2019-01-09 17:15:05.145 [main] INFO  org.apache.flink.runtime.io.network.buffer.NetworkBufferPool  - Allocated 102 MB for network buffer pool (number of memory segments: 3278, bytes per segment: 32768).
+2019-01-09 17:15:05.189 [main] INFO  org.apache.flink.runtime.query.QueryableStateUtils  - Could not load Queryable State Client Proxy. Probable reason: flink-queryable-state-runtime is not in the classpath. To enable Queryable State, please move the flink-queryable-state-runtime jar from the opt to the lib folder.
+2019-01-09 17:15:05.189 [main] INFO  org.apache.flink.runtime.query.QueryableStateUtils  - Could not load Queryable State Server. Probable reason: flink-queryable-state-runtime is not in the classpath. To enable Queryable State, please move the flink-queryable-state-runtime jar from the opt to the lib folder.
+2019-01-09 17:15:05.190 [main] INFO  org.apache.flink.runtime.io.network.NetworkEnvironment  - Starting the network environment and its components.
+2019-01-09 17:15:05.220 [main] INFO  org.apache.flink.runtime.io.network.netty.NettyClient  - Successful initialization (took 28 ms).
+2019-01-09 17:15:05.259 [main] INFO  org.apache.flink.runtime.io.network.netty.NettyServer  - Successful initialization (took 38 ms). Listening on SocketAddress /172.17.163.39:56268.
+2019-01-09 17:15:05.317 [main] WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation  - No hostname could be resolved for the IP address 172.17.163.39, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2019-01-09 17:15:05.317 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices  - Limiting managed memory to 0.7 of the currently free heap space (639 MB), memory will be allocated lazily.
+2019-01-09 17:15:05.321 [main] INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager  - I/O manager uses directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/flink-io-9f927f3d-48c9-4215-bdef-aed0485f6a2f for spill files.
+2019-01-09 17:15:05.369 [main] INFO  o.apache.flink.runtime.taskexecutor.TaskManagerConfiguration  - Messages have a max timeout of 10000 ms
+2019-01-09 17:15:05.376 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService  - Starting RPC endpoint for org.apache.flink.runtime.taskexecutor.TaskExecutor at akka://flink/user/taskmanager_0 .
+2019-01-09 17:15:05.388 [main] INFO  org.apache.flink.runtime.taskexecutor.JobLeaderService  - Start job leader service.
+2019-01-09 17:15:05.389 [flink-akka.actor.default-dispatcher-2] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor  - Connecting to ResourceManager akka.tcp://flink@localhost:6123/user/resourcemanager(00000000000000000000000000000000).
+2019-01-09 17:15:05.389 [main] INFO  org.apache.flink.runtime.filecache.FileCache  - User file cache uses directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/flink-dist-cache-4a126a23-6f5f-41fb-890a-a46e25c18ff6
+2019-01-09 17:15:05.557 [flink-akka.actor.default-dispatcher-2] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor  - Resolved ResourceManager address, beginning registration
+2019-01-09 17:15:05.557 [flink-akka.actor.default-dispatcher-2] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor  - Registration at ResourceManager attempt 1 (timeout=100ms)
+2019-01-09 17:15:05.595 [flink-akka.actor.default-dispatcher-4] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor  - Successful registration at resource manager akka.tcp://flink@localhost:6123/user/resourcemanager under registration id 3945645fbab9187613e4f35589681a89.
+2019-01-09 17:15:25.930 [SIGTERM handler] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner  - RECEIVED SIGNAL 15: SIGTERM. Shutting down as requested.
+2019-01-09 17:15:25.931 [PermanentBlobCache shutdown hook] INFO  org.apache.flink.runtime.blob.PermanentBlobCache  - Shutting down BLOB cache
+2019-01-09 17:15:25.931 [TaskExecutorLocalStateStoresManager shutdown hook] INFO  o.a.flink.runtime.state.TaskExecutorLocalStateStoresManager  - Shutting down TaskExecutorLocalStateStoresManager.
+2019-01-09 17:15:25.931 [TransientBlobCache shutdown hook] INFO  org.apache.flink.runtime.blob.TransientBlobCache  - Shutting down BLOB cache
+2019-01-09 17:15:25.938 [IOManagerAsync shutdown hook] INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager  - I/O manager removed spill file directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/flink-io-9f927f3d-48c9-4215-bdef-aed0485f6a2f

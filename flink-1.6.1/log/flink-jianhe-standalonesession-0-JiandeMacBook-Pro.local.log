@@ -1,0 +1,71 @@
+2019-01-09 17:15:03.116 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - --------------------------------------------------------------------------------
+2019-01-09 17:15:03.118 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  Starting StandaloneSessionClusterEntrypoint (Version: 1.6.1, Rev:23e2636, Date:14.09.2018 @ 19:56:46 UTC)
+2019-01-09 17:15:03.118 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  OS current user: jianhe
+2019-01-09 17:15:03,440 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-01-09 17:15:03.514 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  Current Hadoop/Kerberos user: jianhe
+2019-01-09 17:15:03.514 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  JVM: Java HotSpot(TM) 64-Bit Server VM - Oracle Corporation - 1.8/25.181-b13
+2019-01-09 17:15:03.514 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  Maximum heap size: 981 MiBytes
+2019-01-09 17:15:03.514 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  JAVA_HOME: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
+2019-01-09 17:15:03.516 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  Hadoop version: 2.8.3
+2019-01-09 17:15:03.516 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  JVM Options:
+2019-01-09 17:15:03.516 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     -Xms1024m
+2019-01-09 17:15:03.516 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     -Xmx1024m
+2019-01-09 17:15:03.516 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     -Dlog.file=/Users/jianhe/docker-flink/flink-1.6.1/log/flink-jianhe-standalonesession-0-JiandeMacBook-Pro.local.log
+2019-01-09 17:15:03.516 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     -Dlog4j.configuration=file:/Users/jianhe/docker-flink/flink-1.6.1/conf/log4j.properties
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     -Dlogback.configurationFile=file:/Users/jianhe/docker-flink/flink-1.6.1/conf/logback.xml
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  Program Arguments:
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     --configDir
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     /Users/jianhe/docker-flink/flink-1.6.1/conf
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     --executionMode
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -     cluster
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  -  Classpath: /Users/jianhe/docker-flink/flink-1.6.1/lib/flink-python_2.11-1.6.1.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/flink-shaded-hadoop2-uber-1.6.1.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/log4j-1.2.17.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/logback-classic-1.1.9.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/logback-core-1.1.9.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/slf4j-api-1.7.22.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/slf4j-log4j12-1.7.7.jar:/Users/jianhe/docker-flink/flink-1.6.1/lib/flink-dist_2.11-1.6.1.jar:::
+2019-01-09 17:15:03.517 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - --------------------------------------------------------------------------------
+2019-01-09 17:15:03.518 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - Registered UNIX signal handlers for [TERM, HUP, INT]
+2019-01-09 17:15:03.529 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: jobmanager.rpc.address, localhost
+2019-01-09 17:15:03.531 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: jobmanager.rpc.port, 6123
+2019-01-09 17:15:03.531 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: jobmanager.heap.size, 1024m
+2019-01-09 17:15:03.531 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: taskmanager.heap.size, 1024m
+2019-01-09 17:15:03.531 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: taskmanager.numberOfTaskSlots, 8
+2019-01-09 17:15:03.531 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: parallelism.default, 1
+2019-01-09 17:15:03.531 [main] INFO  org.apache.flink.configuration.GlobalConfiguration  - Loading configuration property: rest.port, 8081
+2019-01-09 17:15:03.543 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - Starting StandaloneSessionClusterEntrypoint.
+2019-01-09 17:15:03.543 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - Install default filesystem.
+2019-01-09 17:15:03.553 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - Install security context.
+2019-01-09 17:15:03.598 [main] INFO  org.apache.flink.runtime.security.modules.HadoopModule  - Hadoop user set to jianhe (auth:SIMPLE)
+2019-01-09 17:15:03.628 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - Initializing cluster services.
+2019-01-09 17:15:03.647 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - Trying to start actor system at localhost:6123
+2019-01-09 17:15:04.198 [flink-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger  - Slf4jLogger started
+2019-01-09 17:15:04.198 [flink-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger  - Slf4jLogger started
+2019-01-09 17:15:04.258 [flink-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting main - Starting remoting
+2019-01-09 17:15:04.258 [flink-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting main - Starting remoting
+2019-01-09 17:15:04.409 [flink-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting main - Remoting started; listening on addresses :[akka.tcp://flink@localhost:6123]
+2019-01-09 17:15:04.409 [flink-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting main - Remoting started; listening on addresses :[akka.tcp://flink@localhost:6123]
+2019-01-09 17:15:04.417 [main] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - Actor system started at akka.tcp://flink@localhost:6123
+2019-01-09 17:15:04.429 [main] WARN  org.apache.flink.configuration.Configuration  - Config uses deprecated configuration key 'jobmanager.rpc.address' instead of proper key 'rest.address'
+2019-01-09 17:15:04.436 [main] INFO  org.apache.flink.runtime.blob.BlobServer  - Created BLOB server storage directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/blobStore-2da04cb1-1447-45bd-80ce-152ce04974a3
+2019-01-09 17:15:04.439 [main] INFO  org.apache.flink.runtime.blob.BlobServer  - Started BLOB server at 0.0.0.0:56261 - max concurrent requests: 50 - max backlog: 1000
+2019-01-09 17:15:04.454 [main] INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl  - No metrics reporter configured, no metrics will be exposed/reported.
+2019-01-09 17:15:04.459 [main] INFO  o.a.flink.runtime.dispatcher.FileArchivedExecutionGraphStore  - Initializing FileArchivedExecutionGraphStore: Storage directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/executionGraphStore-17002a3a-b1d5-4634-ad59-0b89f94ebb9e, expiration time 3600000, maximum cache size 52428800 bytes.
+2019-01-09 17:15:04.484 [main] INFO  org.apache.flink.runtime.blob.TransientBlobCache  - Created BLOB cache storage directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/blobStore-cdb09eea-8e66-4206-8540-856809161eae
+2019-01-09 17:15:04.493 [main] WARN  org.apache.flink.configuration.Configuration  - Config uses deprecated configuration key 'jobmanager.rpc.address' instead of proper key 'rest.address'
+2019-01-09 17:15:04.495 [main] WARN  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint  - Upload directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/flink-web-39f6315b-034c-4b8e-8b78-f02f90e3cc5c/flink-web-upload does not exist, or has been deleted externally. Previously uploaded files are no longer available.
+2019-01-09 17:15:04.498 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint  - Created directory /var/folders/vr/852rcsmn4s5d7bvl9lsfk69m0000gn/T/flink-web-39f6315b-034c-4b8e-8b78-f02f90e3cc5c/flink-web-upload for file uploads.
+2019-01-09 17:15:04.503 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint  - Starting rest endpoint.
+2019-01-09 17:15:04.717 [main] INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils  - Determined location of main cluster component log file: /Users/jianhe/docker-flink/flink-1.6.1/log/flink-jianhe-standalonesession-0-JiandeMacBook-Pro.local.log
+2019-01-09 17:15:04.717 [main] INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils  - Determined location of main cluster component stdout file: /Users/jianhe/docker-flink/flink-1.6.1/log/flink-jianhe-standalonesession-0-JiandeMacBook-Pro.local.out
+2019-01-09 17:15:04.870 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint  - Rest endpoint listening at localhost:8081
+2019-01-09 17:15:04.871 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint  - http://localhost:8081 was granted leadership with leaderSessionID=00000000-0000-0000-0000-000000000000
+2019-01-09 17:15:04.871 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint  - Web frontend listening at http://localhost:8081.
+2019-01-09 17:15:04.884 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService  - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/resourcemanager .
+2019-01-09 17:15:04.954 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService  - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/dispatcher .
+2019-01-09 17:15:04.972 [flink-akka.actor.default-dispatcher-3] INFO  o.a.flink.runtime.resourcemanager.StandaloneResourceManager  - ResourceManager akka.tcp://flink@localhost:6123/user/resourcemanager was granted leadership with fencing token 00000000000000000000000000000000
+2019-01-09 17:15:04.972 [flink-akka.actor.default-dispatcher-3] INFO  o.a.flink.runtime.resourcemanager.slotmanager.SlotManager  - Starting the SlotManager.
+2019-01-09 17:15:04.984 [flink-akka.actor.default-dispatcher-3] INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher  - Dispatcher akka.tcp://flink@localhost:6123/user/dispatcher was granted leadership with fencing token 00000000-0000-0000-0000-000000000000
+2019-01-09 17:15:04.985 [flink-akka.actor.default-dispatcher-15] INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher  - Recovering all persisted jobs.
+2019-01-09 17:15:05.590 [flink-akka.actor.default-dispatcher-15] INFO  o.a.flink.runtime.resourcemanager.StandaloneResourceManager  - Registering TaskManager with ResourceID 500ed7ef8efd090fa0d26eb49716e7ec (akka.tcp://flink@jiandemacbook-pro.local:56263/user/taskmanager_0) at ResourceManager
+2019-01-09 17:15:05.605 [flink-akka.actor.default-dispatcher-15] INFO  o.a.flink.runtime.resourcemanager.slotmanager.SlotManager  - Registering TaskManager 500ed7ef8efd090fa0d26eb49716e7ec under 3945645fbab9187613e4f35589681a89 at the SlotManager.
+2019-01-09 17:15:26.329 [flink-akka.actor.default-dispatcher-15] WARN  akka.remote.ReliableDeliverySupervisor flink-akka.remote.default-remote-dispatcher-16 - Association with remote system [akka.tcp://flink@jiandemacbook-pro.local:56263] has failed, address is now gated for [50] ms. Reason: [Disassociated] 
+2019-01-09 17:15:26.329 [flink-akka.actor.default-dispatcher-15] WARN  akka.remote.ReliableDeliverySupervisor flink-akka.remote.default-remote-dispatcher-16 - Association with remote system [akka.tcp://flink@jiandemacbook-pro.local:56263] has failed, address is now gated for [50] ms. Reason: [Disassociated] 
+2019-01-09 17:15:26.430 [SIGTERM handler] INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint  - RECEIVED SIGNAL 15: SIGTERM. Shutting down as requested.
+2019-01-09 17:15:26.430 [TransientBlobCache shutdown hook] INFO  org.apache.flink.runtime.blob.TransientBlobCache  - Shutting down BLOB cache
+2019-01-09 17:15:26.437 [BlobServer shutdown hook] INFO  org.apache.flink.runtime.blob.BlobServer  - Stopped BLOB server at 0.0.0.0:56261
