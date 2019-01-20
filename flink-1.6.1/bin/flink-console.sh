@@ -66,7 +66,12 @@ esac
 
 FLINK_TM_CLASSPATH=`constructFlinkClassPath`
 
-log_setting=("-Dlog4j.configuration=file:${FLINK_CONF_DIR}/log4j-console.properties" "-Dlogback.configurationFile=file:${FLINK_CONF_DIR}/logback-console.xml")
+FLINK_LOG_PREFIX="${FLINK_LOG_DIR}/flink-${SERVICE}-${HOSTNAME}"
+log="${FLINK_LOG_PREFIX}.log"
+out="${FLINK_LOG_PREFIX}.out"
+
+log_setting=("-Dlog.file=${log}" "-Dlog4j.configuration=file:${FLINK_CONF_DIR}/log4j.properties" "-Dlogback.configurationFile=file:${FLINK_CONF_DIR}/logback.xml")
+# log_setting=("-Dlog4j.configuration=file:${FLINK_CONF_DIR}/log4j-console.properties" "-Dlogback.configurationFile=file:${FLINK_CONF_DIR}/logback-console.xml")
 
 JAVA_VERSION=$(${JAVA_RUN} -version 2>&1 | sed 's/.*version "\(.*\)\.\(.*\)\..*"/\1\2/; 1q')
 
