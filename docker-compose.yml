@@ -31,7 +31,9 @@ services:
     command: jobmanager
     environment:
       - JOB_MANAGER_RPC_ADDRESS=jobmanager
-
+    volumes:
+      - ./logs:/opt/flink/log
+      
   taskmanager:
     image: myflink
     expose:
@@ -44,3 +46,7 @@ services:
       - "jobmanager:jobmanager"
     environment:
       - JOB_MANAGER_RPC_ADDRESS=jobmanager
+      - TASK_RUNTIME_MEMORY=4096m
+    volumes:
+      - ./logs:/opt/flink/log
+    

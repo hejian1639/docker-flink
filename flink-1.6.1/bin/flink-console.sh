@@ -66,7 +66,7 @@ esac
 
 FLINK_TM_CLASSPATH=`constructFlinkClassPath`
 
-FLINK_LOG_PREFIX="${FLINK_LOG_DIR}/flink-${SERVICE}-${HOSTNAME}"
+FLINK_LOG_PREFIX="${FLINK_LOG_DIR}/flink-${SERVICE}"
 log="${FLINK_LOG_PREFIX}.log"
 out="${FLINK_LOG_PREFIX}.out"
 
