@@ -18,12 +18,12 @@
 
 # Set the FLINK_DOCKER_IMAGE_NAME environment variable to override the image name to use
 
-version: "3"
+version: "2.4"
 services:
   jobmanager:
     build:
       context: .
-    image: myflink
+    image: myflink:1.8.1
     expose:
       - "6123"
     ports:
@@ -35,7 +35,7 @@ services:
       - ./logs:/opt/flink/log
       
   taskmanager:
-    image: myflink
+    image: myflink:1.8.1
     expose:
       - "6121"
       - "6122"
@@ -49,4 +49,5 @@ services:
       - TASK_RUNTIME_MEMORY=4096m
     volumes:
       - ./logs:/opt/flink/log
+
     
