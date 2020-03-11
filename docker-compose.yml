@@ -5,7 +5,9 @@ version: '2.4'
 #      name: "host"
 services:
   jobmanager:
-    image: 172.17.161.80:5000/myflink:1.8.2
+    build:
+      context: .
+    image: myflink:1.8.2
     container_name: flink_jobmanager
     expose:
       - "6123"
