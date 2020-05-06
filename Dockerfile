@@ -27,7 +27,7 @@ ENV FLINK_HOME $FLINK_INSTALL_PATH/flink
 ENV PATH $PATH:$FLINK_HOME/bin
 
 # flink-dist can point to a directory or a tarball on the local system
-ARG flink_dist=./flink-1.8.0
+ARG flink_dist=./flink-1.10.0
 
 RUN mkdir -p $FLINK_HOME
 

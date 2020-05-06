@@ -7,7 +7,7 @@ services:
   jobmanager:
     build:
       context: .
-    image: myflink:1.8.2
+    image: myflink:1.10.0
     container_name: flink_jobmanager
     expose:
       - "6123"
@@ -24,7 +24,7 @@ services:
       core: 0
 
   taskmanager:
-    image: 172.17.161.80:5000/myflink:1.8.2
+    image: myflink:1.10.0
     container_name: flink_taskmanager
     expose:
       - "6121"
